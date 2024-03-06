@@ -1,7 +1,6 @@
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -55,18 +54,10 @@ public class Movie {
 
     public String getRatingViaApi(String moviesInfoJson){
         String rating = "";
-        String imdbRating = "imdbRating : ";
+        String imdbRating = "";
         JSONObject jo = new JSONObject(moviesInfoJson);
         imdbRating += jo.getString("imdbRating");
-        JSONArray ja = jo.getJSONArray("Ratings");
-        for (int i = 0; i < ja.length(); i++) {
-            JSONObject saveJson = ja.getJSONObject(i);
-            if (saveJson.getString("Source").equals("Internet Movie Databases")) {
-                rating += saveJson.getString("Source") + " : " + saveJson.getString("Value");
-            }
-        }
-
-        return rating;
+        return imdbRating + "/10";
     }
 
     public void getActorListViaApi(String movieInfoJson){
