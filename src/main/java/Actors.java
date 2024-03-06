@@ -38,7 +38,7 @@ public class Actors {
                 }
 
                 in.close();
-                return response.toString();
+                return response.toString().substring(1, response.toString().length() - 1);
             } else {
                 return "Error: " + connection.getResponseCode() + " " + connection.getResponseMessage();
             }
@@ -59,13 +59,13 @@ public class Actors {
         JSONObject jo = new JSONObject(actorsInfoJson);
         statues = jo.getBoolean("is_alive");
         return statues;
-    } 
+    }
 
     public String getDateOfDeathViaApi(String actorsInfoJson){
         String date = "";
         JSONObject jo = new JSONObject(actorsInfoJson);
         if (isAlive(actorsInfoJson)) {
-            date = "not yet!";
+            date = "not yet :)";
         }
         else {
             date = jo.getString("death");
