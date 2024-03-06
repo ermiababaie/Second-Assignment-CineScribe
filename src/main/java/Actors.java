@@ -59,7 +59,7 @@ public class Actors {
         JSONObject jo = new JSONObject(actorsInfoJson);
         statues = jo.getBoolean("is_alive");
         return statues;
-    }
+    } 
 
     public String getDateOfDeathViaApi(String actorsInfoJson){
         String date = "";
