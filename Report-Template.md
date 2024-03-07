@@ -1,27 +1,31 @@
 # Project Title
 
-Simple overview of use/purpose.
+movies and actors databases
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+this program is for finding information about movies and actors for all movie lovers
 
 ## Getting Started
 
 ### Dependencies
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* install gradle 8.6 in your computer and import org.json.JSONObject and JSONArray
 * ex. Windows 10
 
 ### Installing
 
-* How/where to download your program
+* open https://github.com/ermiababaie/Second-Assignment-CineScribe/ and use program
 * Any modifications needed to be made to files/folders
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* open Intelij or any apps for compile java
+* copy all programs in one folder (main, movie and actor)
+* open main
+* goto main
+* run program!
 ```
 code blocks for commands
 ```
@@ -35,22 +39,24 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Ermia Aghababaei(ermiababaie)
 
 ## Version History
 
+* 0.5
+    * fix bugs about menu
+* 0.4
+    * add menu to program
+* 0.3
+    * fix bugs about actors information
 * 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
+    * add JSON from api-ninjas and omdb-Api to program (from youtube and jadijadi)
 * 0.1
-    * Initial Release
+    * Initial Release (source from ranas github)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [SBU-cs402] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
