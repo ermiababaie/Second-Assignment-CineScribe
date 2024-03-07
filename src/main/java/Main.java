@@ -32,9 +32,17 @@ public class Main {
         else {
             name = in.next();
             Actors actor = new Actors("", false);
-            if (in.hasNext())
-                name += " " + in.next();
             String dis = actor.getActorData(name);
+            System.out.print("do you mean " + actor.getName(dis) + "? ");
+            String yn;
+            yn = in.next();
+            while (yn.equals("no")) {
+                System.out.print("Enter new name ");
+                name = in.next();
+                dis = actor.getActorData(name);
+                System.out.print("do you mean " + actor.getName(dis) + "? ");
+                yn = in.next();
+            }
 //            System.out.println(dis);
             double nw = actor.getNetWorthViaApi(dis);
             System.out.println("NetWorth of actor is " + (int)nw);
