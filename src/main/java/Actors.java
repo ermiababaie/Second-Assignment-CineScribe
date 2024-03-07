@@ -73,4 +73,10 @@ public class Actors {
         return date;
     }
 
+    public String getName(String actorsInfoJson) {
+        JSONObject jo = new JSONObject(actorsInfoJson);
+        String name = jo.getString("name");
+        return name;
+    }
+
 }
