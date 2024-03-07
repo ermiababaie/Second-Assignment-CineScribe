@@ -34,7 +34,9 @@ code blocks for commands
 
 Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+https://www.youtube.com/watch?v=WPZnqMGRyHg for api and JSON
+https://stackoverflow.com & https://www.geeksforgeeks.org for java syntax
+@ermia_babaie in social medias for any question
 ```
 
 ## Authors
